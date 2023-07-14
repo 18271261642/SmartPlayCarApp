@@ -68,7 +68,7 @@
             android:screenOrientation="portrait"/>
         <activity android:name=".car.CarAboutActivity"
             android:screenOrientation="portrait"/>
-
+        <activity android:name=".car.CarFaultNotifyActivity"/>
 
 
 
