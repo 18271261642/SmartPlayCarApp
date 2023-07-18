@@ -167,7 +167,7 @@ public class CusVerticalTextScheduleView extends View {
         currRectf.top = mHeight-currV ;
         currRectf.right = mWidth;
         currRectf.bottom = mHeight;
-        String txtStr = String.valueOf(currScheduleValue);
+        String txtStr = String.valueOf(currScheduleValue<0?0 : currScheduleValue);
 
         canvas.drawText(txtStr,20,currRectf.top-20,txtPaint);
 

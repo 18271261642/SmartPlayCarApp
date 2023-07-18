@@ -92,6 +92,7 @@
 
 
         <com.bonlala.widget.layout.SettingBar
+            android:id="@+id/carSysHeightMemoryBar"
             android:layout_width="match_parent"
             app:bar_leftDrawable="@mipmap/ic_sys_height_memory"
             app:bar_leftText="高度记忆设置"

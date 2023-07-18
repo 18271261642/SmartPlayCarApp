@@ -67,6 +67,12 @@ class CarSysFragment : TitleBarFragment<CarSysSetActivity>() {
             fragmentTransaction.addToBackStack(null)
             fragmentTransaction.commit()
         }
+        //高度记忆设置
+        findViewById<SettingBar>(R.id.carSysHeightMemoryBar).setOnClickListener {
+            fragmentTransaction.replace(R.id.stsSetFrameLayout,CarHeightMemoryFragment.getInstance())
+            fragmentTransaction.addToBackStack(null)
+            fragmentTransaction.commit()
+        }
     }
 
     override fun initData() {

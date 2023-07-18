@@ -1,11 +1,13 @@
 package com.app.playcarapp.car.fragment
 
+import android.graphics.Color
 import android.os.Build
 import com.app.playcarapp.R
 import com.app.playcarapp.action.TitleBarFragment
 import com.app.playcarapp.adapter.OnItemCheckedListener
 import com.app.playcarapp.car.CarFaultNotifyActivity
 import com.app.playcarapp.car.CarHomeActivity
+import com.app.playcarapp.car.view.HalfCircleView
 import com.app.playcarapp.car.view.HomeBottomCheckView
 import com.app.playcarapp.widget.CusVerticalScheduleView
 import com.app.playcarapp.widget.CusVerticalTextScheduleView
@@ -25,6 +27,8 @@ class HomeControlFragment : TitleBarFragment<CarHomeActivity>() {
 
     private var homeBottomCheckView : HomeBottomCheckView ?= null
 
+
+
     companion object{
         fun getInstance() : HomeControlFragment{
             return HomeControlFragment()
@@ -42,6 +46,8 @@ class HomeControlFragment : TitleBarFragment<CarHomeActivity>() {
         cusVerticalView = findViewById(R.id.cusVerticalView)
         homeBottomCheckView = findViewById(R.id.homeBottomCheckView)
 
+
+
         homeBottomCheckView?.setOnItemCheck(object : OnItemCheckedListener{
             override fun onItemCheck(position: Int, isChecked: Boolean) {
                if(position == 2){
@@ -51,9 +57,10 @@ class HomeControlFragment : TitleBarFragment<CarHomeActivity>() {
 
         })
 
+
+
+
         cusVerticalView?.allScheduleValue = 150F
-
-
         cusVerticalTxtView?.allScheduleValue = 150F
 
 
@@ -61,8 +68,8 @@ class HomeControlFragment : TitleBarFragment<CarHomeActivity>() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             homeLeftAirSeekBar?.min = 0
         }
-        homeLeftAirSeekBar?.progress = 100
-        showSchedule(100)
+        homeLeftAirSeekBar?.progress = 130
+        showSchedule(130)
         homeLeftAirSeekBar?.setOnSeekBarChangeListener(object : OnSeekBarChangeListener{
             override fun onProgressChanged(VerticalSeekBar: VerticalSeekBar?, progress: Int) {
                 showSchedule(progress)

@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dp_30"
         android:layout_marginTop="@dimen/dp_80"
-        android:src="@mipmap/ic_setting_top_img"/>
+        android:src="@mipmap/ic_car_home_top_img"/>
 
     <LinearLayout
         android:layout_width="match_parent"

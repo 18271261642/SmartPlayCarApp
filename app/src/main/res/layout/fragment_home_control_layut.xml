@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dp_30"
         android:layout_marginTop="@dimen/dp_60"
-        android:src="@mipmap/ic_setting_top_img" />
+        android:src="@mipmap/ic_car_home_top_img" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -46,10 +46,13 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-           <ImageView
+
+            <include layout="@layout/view_car_home_cente_layout"/>
+
+        <!--   <ImageView
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
-               android:src="@drawable/ic_car_111"/>
+               android:src="@drawable/ic_car_111"/>-->
         </LinearLayout>
 
         <LinearLayout
@@ -65,7 +68,9 @@
     </LinearLayout>
 
 
-    <include layout="@layout/view_car_home_bottom_number_layout"/>
+   <com.app.playcarapp.car.view.HomeBottomNumberView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
 
     <com.app.playcarapp.car.view.HomeBottomCheckView
         android:id="@+id/homeBottomCheckView"

@@ -20,4 +20,14 @@
 
 
     </style>
+    
+    
+    <style name="LaunchTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="backgroundColor">@color/play_color_theme</item>
+    </style>
+    
+    
+    
 </resources>
